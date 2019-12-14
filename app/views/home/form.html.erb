@@ -1,0 +1,26 @@
+
+<div class='page-e wow fadeInUp'data-wow-duration="3s">
+<br>
+<div class="form-edit"> 
+<%=form_for @formp ,url:formp_path , method: 'post' do |f|%>
+<div class='form-group'> 
+	<%=f.label :name%>
+	<%=f.text_field :name , class: 'form-control'%>
+</div>
+<div class='form-group'> 
+	<%=f.label :email%>
+	<%=f.text_field :email , class: 'form-control'%>
+</div>
+<div class='form-group'> 
+	<%=f.label :mobile_number%>
+	<%=f.text_field :phone_no , class: 'form-control'%>
+</div>
+<div class='form-group'> 
+	<%=f.label :message%>
+	<%=f.text_area :message , class: 'form-control area'%>
+</div>
+<%=f.submit 'Submit', class: "btn btn-primary"%>
+<%end%>
+</div>
+</div>
+
